@@ -8,16 +8,16 @@ return [
     'domain_allowlist' => [],
 
     // Allow registration through socials
-    'registration' => true,
+    'registration' => false,
 
     // Enable social login
-    'enabled' => true,
+    'enabled' => false,
 
     // Specify the providers that should be visible on the login.
     // These should match the socialite providers you have setup in your services.php config.
     // Uses blade UI icons, for example: https://github.com/owenvoke/blade-fontawesome
     'providers' => [
-        'facebook' => [
+        /*'facebook' => [
             'label' => 'Facebook',
             'icon' => 'fab-facebook-f',
         ],
@@ -32,7 +32,7 @@ return [
         'twitter' => [
             'label' => 'Twitter',
             'icon' => 'fab-twitter',
-        ],
+        ],*/
     ],
 
     'user_model' => \App\Models\User::class,
